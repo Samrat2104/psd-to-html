@@ -1,0 +1,300 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     outline: 0;
+}
+body{
+     font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+     font-weight: 800;
+}
+img{
+     display: block;
+}
+.container{
+     width: 1170px;
+     margin:0 auto;
+}
+.row{
+     display: flex;
+     flex-wrap: wrap;
+}
+.section_title{
+     text-align: center;
+     color: #7e8287;
+     font-size: 16px;
+     line-height: 41px;
+}
+.section_title h2{
+     text-transform: uppercase;
+     color: #02918c;
+     font-size: 46px;
+     padding: 92px 0 12px 0;
+}
+.section_title p{
+     padding: 0 150px;
+}
+.section_title p span{
+     font-weight: 800;
+
+}
+/* header section css start */
+#header{
+     background-color: #02918c;
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     z-index: 9999999999;
+}
+#header .container .row{
+     align-items: center;
+}
+.menu ul{
+     list-style-type: none;
+}
+.menu ul li{
+     display: inline-block;
+}
+.menu ul li a{
+     display: inline-block;
+     font-size: 12px;
+     line-height: 1.5;
+     color: #fff;
+     font-weight: 800;
+     text-decoration: none;
+     text-transform: uppercase;
+     padding: 21px 25px;
+     transition:all linear .3s;
+}
+.menu ul li:hover a{
+     color: #cfc91d;
+}
+.logo{
+     width: 30%;
+}
+.menu{
+     width: 70%;
+     text-align: right;
+}
+/* //header section css end */
+/* banner section css start */
+#banner{
+     background-image: url(../images/banner.jpg);
+     background-size: cover;
+     background-position: center;
+     height: 730px;
+     position: relative;
+     z-index: 1;
+}
+#banner::before{
+     content:"";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0,0,0,.34);
+     z-index: -1;
+}
+#banner .container,
+#banner .row{
+     height: 100%;
+}
+#banner .container .row{
+     align-items: center;
+     justify-content: center;
+}
+#banner .banner_content{
+     text-align: center;
+     color: #fff;
+}
+#banner .banner_content h1{
+     font-size: 68px;
+     font-weight: 800;
+     line-height: 75px;
+     letter-spacing: 30px;
+     text-transform: uppercase;
+}
+#banner .banner_content img{
+     margin:49px auto;
+}
+#banner .banner_content a{
+     display: inline-block;
+     text-decoration: none;
+     color: #0b1016;
+     font-weight: 800;
+     padding: 15px 55px;
+     font-size: 14px;
+     background-color: #cfc91d;
+}
+/* //banner section css end*/
+/* about section css start */
+.about_item_wrapper .about_item{
+     width: 25%;
+     text-align: center;
+     border-right: 1px solid #d9dbdb;
+     margin: 40px 0;
+}
+.about_item_wrapper .about_item p{
+     font-size: 11px;
+     line-height: 21px;
+     color: #7e8287;
+     padding: 14px 65px;
+}
+.about_item_wrapper .about_item h3{
+     font-size: 16px;
+     line-height: 23px;
+     color: #7e8287;
+     padding: 14px 0;
+}
+.about_item_wrapper .about_item img{
+     margin: 0 auto;
+     padding: 14px 0;
+
+}
+.about_item_wrapper .about_item:last-child{
+     border-right: none;
+}
+/* //about section css end*/
+/* Service Section Css Start */
+#service{
+     background:#f0f0e8 url(../images/serviceBanner.jpg);
+     background-size:cover 50%;
+     background-repeat: no-repeat;
+     background-position: center right;
+     position: relative;
+}
+  #service::before{
+     content:'';
+     position: absolute;
+     width:50%;
+     height:100%;
+     background-color: rgba(240,240,232,.7);
+     right:0;
+}
+  .service_inner{
+     width: 50%;
+}
+  #service .section_title h3{
+     padding-top: 74px;
+}
+  #service .service_inner .section_title{
+     text-align:left;
+}
+  #service .service_inner .section_title p{
+     padding:initial;
+}
+  .service_item_wrapper .service_item{
+     width:50%;
+}
+  #service .service_item h3{
+     font-size: 16px;
+     line-height: 23px;
+     color:#7e8287;
+     padding: 12px 0;
+}
+  .service_item_wrapper .service_item p{
+     font-size: 11px;
+     line-height: 21px;
+     padding-top:12px;
+     padding-bottom: 12px;
+     padding-right:100px;
+     color: #7e8287;
+}
+ #service .service_item{
+     width: 50%;
+}
+ #service .row{
+     padding-bottom: 74px;
+}
+ #service .service_item img{
+     padding: 9px 0;
+}
+#service .service_inner .section_title{
+     padding-bottom:30px;
+}
+  /* //Service Section Css End */
+/* mywork section css start */
+#mywork .section_title h2{
+     padding-top: 98px;
+}
+#mywork .section_title p{
+     padding: 15px 246px 76px 246px;
+}
+.mywork_item_wrapper .mywork_item{
+width: 25%;
+}
+.mywork_item_wrapper .mywork_item img{
+     width: 100%;
+}
+.mywork_item_wrapper .mywork_item{
+     position: relative;
+}
+.mywork_item_wrapper .mywork_item .mywork_overlay{
+     position: absolute;
+     top: 20px;
+     right: 30px;
+     bottom: 20px;
+     left: 30px;
+     background-color: rgba(2,145,140,.85);
+     color: #ffffff;
+     text-align: center;
+     transform: scale(0);
+     transition: all linear 0.5s;
+}
+.mywork_item_wrapper .mywork_item:hover .mywork_overlay{
+     transform: scale(1);
+} 
+.mywork_item_wrapper .mywork_item .mywork_overlay h3{
+     padding-top: 58px;
+     padding-right: 72px;
+     padding-bottom: 9px;
+     padding-left: 72px;
+     line-height: 23px;
+     font-size: 16px;
+}
+.mywork_item_wrapper .mywork_item .mywork_overlay p{
+     font-size: 13px;
+     line-height: 23px;
+     padding: 9px 42px;
+}
+/* //contract section css end */
+/* contract section css start */
+#contact .contact-form{
+	background:#0b0b0b;
+	width:100%;
+	color:#7e8287;
+}
+#contact .service-inner .section-title{
+	margin:90px 125px 70px;
+}
+#contact .contact-form .contact-item{
+	text-align:center;
+	border-bottom:1px solid #7e8287;
+	color:#7e8287;
+	font-size:16px;
+	line-height:41px;
+	text-transform:uppercase;
+	padding:63px 0 15px 0;
+	margin:0 320px;
+}
+#contact .contact-form .contact-item:last-child{
+	border-top:1px solid #898989;
+	margin:90px 180px 90px;
+	padding-bottom:70px;
+}
+#contact .contact-form a{
+	display:inline-block;
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#0b1016;
+	background-color:#cfc91d;
+	font-weight:800;
+	padding:15px 53px;
+	font-size:14px;
+}
+#contact .contact-form .op{
+	margin:0 200px;
+}
+/* //contract Section Css End */
